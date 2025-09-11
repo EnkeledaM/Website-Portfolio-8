@@ -3,33 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Enkeleda</title>
-  <link rel="stylesheet" href="css/style.production.css" />
+  <title>Contact Enkeleda Mustafaj</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="index.html"><img src="img/logo.png" alt="Logo" /></a>
-    <nav class="nav">
-      <ul class="nav__list">
-        <li><a class="nav__link" href="index.html">Home</a></li>
-        <li><a class="nav__link" href="work.html">Work</a></li>
-        <li><a class="nav__link" href="about.html">About</a></li>
-        <li><a class="nav__link nav__link--active" href="contact.html">Contact</a></li>
-      </ul>
+    <a class="logo" href="index.html">
+      <img src="img/logo.svg" alt="Enkeleda Portfolio Logo" />
+    </a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="work.html">Work</a>
+      <a href="contact.html" aria-current="page">Contact</a>
     </nav>
   </header>
 
   <main class="container">
-    <h1>Get in touch</h1>
-    <form class="form" action="#" method="post">
-      <label>Name <input type="text" name="name" required /></label>
-      <label>Email <input type="email" name="email" required /></label>
-      <label>Message <textarea name="message" rows="5" required></textarea></label>
-      <button class="button" type="submit">Send</button>
+    <h1>Contact</h1>
+    <p>You can reach me through any of the following channels:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:enkeleda@example.com">enkeleda@example.com</a></li>
+      <li><strong>Phone:</strong> +49 123 456 789</li>
+      <li><strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/enkeleda-mustafaj-53a38434/" target="_blank">
+          linkedin.com/in/enkeleda-mustafaj-53a38434
+        </a>
+      </li>
+      <li><strong>Xing:</strong> 
+        <a href="https://www.xing.com/profile/Enkeleda_Mustafaj3/web_profiles" target="_blank">
+          xing.com/profile/Enkeleda_Mustafaj3
+        </a>
+      </li>
+      <li><strong>GitHub:</strong> 
+        <a href="https://github.com/EnkeledaM" target="_blank">
+          github.com/EnkeledaM
+        </a>
+      </li>
+    </ul>
+
+    <h2>Contact Form</h2>
+    <form class="contact-form" action="#" method="post">
+      <label>
+        Name
+        <input type="text" name="name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+      <button type="submit">Send</button>
     </form>
   </main>
 
-  <footer class="site-footer"><p>© <span id="year"></span> Enkeleda</p></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <footer class="site-footer">
+    <small>© <span id="year"></span> Enkeleda Mustafaj</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
