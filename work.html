@@ -2,49 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Work — Enkeleda Mustafaj</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-   <a href="index.html">
-  <img src="img/logo.png" alt="Enkeleda Mustafaj Logo" class="logo">
-</a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html" aria-current="page">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="Enkeleda Mustafaj logo" class="logo" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html" aria-current="page">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>Projects</h2>
+  <main class="container">
+    <h1>Projects</h1>
 
-      <article class="project">
-        <h3>Project One — Sales Dashboard</h3>
-        <p>Responsive layout built with HTML and CSS, focusing on grids and typography.</p>
-      </article>
+    <article class="project">
+      <h2>Project One — Sales Dashboard</h2>
+      <p>Responsive layout built with HTML and CSS, focusing on grids and typography.</p>
+    </article>
 
-      <article class="project">
-        <h3>Project Two — Product Landing Page</h3>
-        <p>Landing page with hero section, navigation, and call-to-action buttons.</p>
-      </article>
+    <article class="project">
+      <h2>Project Two — Product Landing Page</h2>
+      <p>Landing page with hero section, navigation, and call-to-action buttons.</p>
+    </article>
 
-      <article class="project">
-        <h3>Project Three — Personal Portfolio</h3>
-        <p>This portfolio website, built step by step, with semantic HTML and Git/GitHub version control.</p>
-      </article>
-    </section>
+    <article class="project">
+      <h2>Project Three — Personal Portfolio</h2>
+      <p>This portfolio website, built step by step, with semantic HTML and Git/GitHub version control.</p>
+    </article>
   </main>
 
-  <footer>
-    <p>&copy; <span id="y"></span> Enkeleda Mustafaj</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Enkeleda Mustafaj</p>
+    </div>
   </footer>
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
+
