@@ -2,46 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Enkeleda Mustafaj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Enkeleda Mustafaj</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <a href="index.html">
-  <img src="img/logo.png" alt="Enkeleda Mustafaj Logo" class="logo">
-</a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html" aria-current="page">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="Enkeleda Mustafaj logo" class="logo" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="about-me">
-      <img src="img/avatar.jpg" alt="Enkeleda Mustafaj" class="avatar" />
-      <h2>About Me</h2>
-      <p>
-        I am a motivated learner transitioning into Software Engineering.  
-        My background includes mathematics and business consulting, and now I’m focused on building
-        a strong foundation in web development.
-      </p>
-      <p>
-        I enjoy solving problems, building projects step by step, and sharing knowledge with others.  
-        This portfolio website is part of my learning journey with CareerFoundry.
-      </p>
+  <main class="container">
+    <section class="hero">
+   
+      <img src="img/enkeleda.jpg" alt="Photo of Enkeleda Mustafaj" class="portrait" />
+
+      <div class="hero-text">
+        <h1>About Me</h1>
+        <p>
+          I am a motivated learner transitioning into Software Engineering.
+          My background includes mathematics and business consulting,
+          and I’m focused on building a strong foundation in web development.
+        </p>
+        <p>
+          I enjoy solving problems, building projects step by step, and sharing knowledge with others.
+          This portfolio is part of my learning journey with CareerFoundry.
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; <span id="y"></span> Enkeleda Mustafaj</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Enkeleda Mustafaj</p>
+    </div>
   </footer>
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
-
 

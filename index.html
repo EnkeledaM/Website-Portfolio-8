@@ -2,42 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Enkeleda Mustafaj — Home</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-
-    <a href="index.html">
-  <img src="img/logo.png" alt="Enkeleda Mustafaj Logo" class="logo">
-</a>
-
-    <nav>
-      <ul>
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="Enkeleda Mustafaj logo" class="logo" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="intro">
-      <img src="img/avatar.jpg" alt="Enkeleda Mustafaj" class="avatar" />
-      <h2>Hello, I’m Enkeleda</h2>
-      <p>Junior Web Developer in the making – building an educational platform step by step.</p>
-      <p><a href="work.html">See my projects →</a></p>
+  <main class="container">
+    <section class="hero">
+      <img src="img/enkeleda.jpg" alt="Photo of Enkeleda Mustafaj" class="portrait" />
+      <div class="hero-text">
+        <h1>Hello, I’m Enkeleda</h1>
+        <p>Junior Web Developer in the making — building an educational platform step by step.</p>
+        <p><a class="btn" href="work.html">See my projects →</a></p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; <span id="y"></span> Enkeleda Mustafaj</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Enkeleda Mustafaj</p>
+    </div>
   </footer>
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
 </html>
+
 
 
 

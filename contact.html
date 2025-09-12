@@ -2,38 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Enkeleda Mustafaj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Enkeleda Mustafaj</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header>
-    <a href="index.html">
-  <img src="img/logo.png" alt="Enkeleda Mustafaj Logo" class="logo">
-</a>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="work.html">Work</a></li>
-        <li><a href="contact.html" aria-current="page">Contact</a></li>
-      </ul>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="img/logo.png" alt="Enkeleda Mustafaj logo" class="logo" />
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>Contact Enkeleda Mustafaj</h2>
-    <ul>
-      <li>Email: enkeleda.mustafaj@example.com</li>
-      <li>Phone: +49 123 456 789</li>
+  <main class="container">
+    <h1>Contact Enkeleda Mustafaj</h1>
+    <ul class="contact-list">
+      <li>Email: kelamustafaj@hotmail.com</li>
+      <li>Phone: +49 17622100760</li>
       <li><a href="https://www.linkedin.com/in/enkeleda-mustafaj-53a38434/">LinkedIn</a></li>
       <li><a href="https://www.xing.com/profile/Enkeleda_Mustafaj3/web_profiles">Xing</a></li>
       <li><a href="https://github.com/EnkeledaM">GitHub</a></li>
     </ul>
   </main>
 
-  <footer>
-    <p>&copy; <span id="y"></span> Enkeleda Mustafaj</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="y"></span> Enkeleda Mustafaj</p>
+    </div>
   </footer>
   <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
 </body>
