@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Enkeleda Mustafaj</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
@@ -12,6 +12,7 @@
       <a class="brand" href="index.html">
         <img src="img/logo.png" alt="Enkeleda Mustafaj logo" class="logo" />
       </a>
+
       <nav aria-label="Primary">
         <ul class="nav">
           <li><a href="index.html">Home</a></li>
@@ -25,13 +26,38 @@
 
   <main class="container">
     <h1>Contact Enkeleda Mustafaj</h1>
-    <ul class="contact-list">
-      <li>Email: kelamustafaj@hotmail.com</li>
+
+    <!-- Informacioni ekzistues i kontaktit -->
+    <ul>
+      <li>Email: <a href="mailto:kelamustafaj@hotmail.com">kelamustafaj@hotmail.com</a></li>
       <li>Phone: +49 17622100760</li>
-      <li><a href="https://www.linkedin.com/in/enkeleda-mustafaj-53a38434/">LinkedIn</a></li>
-      <li><a href="https://www.xing.com/profile/Enkeleda_Mustafaj3/web_profiles">Xing</a></li>
-      <li><a href="https://github.com/EnkeledaM">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li><a href="https://www.xing.com/">Xing</a></li>
+      <li><a href="https://github.com/">GitHub</a></li>
     </ul>
+
+    <!-- FORMULARI I RI PER BONUS TASK 1 -->
+    <h2>Send me a message</h2>
+
+<form id="contact-form" novalidate>
+
+      <div class="input-wrapper">
+        <label for="name">Name</label>
+        <input id="name" type="text" />
+      </div>
+
+      <div class="input-wrapper">
+        <label for="email">Email</label>
+        <input id="email" type="email" />
+      </div>
+
+      <div class="input-wrapper">
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
   </main>
 
   <footer class="site-footer">
@@ -39,7 +65,14 @@
       <p>© <span id="y"></span> Enkeleda Mustafaj</p>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- JavaScript për validimin e formularit -->
+ <script src="js/contact-validation.js"></script>
+
 </body>
 </html>
 
