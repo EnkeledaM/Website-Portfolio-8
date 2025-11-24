@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About — Enkeleda Mustafaj</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/style.production.css" />
 </head>
 <body>
   <header class="site-header">
@@ -24,23 +24,16 @@
   </header>
 
   <main class="container">
-    <section class="hero">
-   
-      <img src="img/enkeleda.jpg" alt="Photo of Enkeleda Mustafaj" class="portrait" />
-
-      <div class="hero-text">
-        <h1>About Me</h1>
-        <p>
-          I am a motivated learner transitioning into Software Engineering.
-          My background includes mathematics and business consulting,
-          and I’m focused on building a strong foundation in web development.
-        </p>
-        <p>
-          I enjoy solving problems, building projects step by step, and sharing knowledge with others.
-          This portfolio is part of my learning journey with CareerFoundry.
-        </p>
-      </div>
-    </section>
+    <h1>About Me</h1>
+    <p>
+      I have a strong background in Mathematics and Business and I am currently
+      transitioning into web development to build a modern educational platform.
+    </p>
+    <ul class="list">
+      <li>Experience in teaching mathematics and working with data</li>
+      <li>Learning HTML, CSS, JavaScript and modern frontend tools</li>
+      <li>Long-term goal: create a scalable online learning platform</li>
+    </ul>
   </main>
 
   <footer class="site-footer">
@@ -48,7 +41,9 @@
       <p>© <span id="y"></span> Enkeleda Mustafaj</p>
     </div>
   </footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
 
